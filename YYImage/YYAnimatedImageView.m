@@ -409,9 +409,11 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
     [_requestQueue cancelAllOperations];
     _link.paused = YES;
     self.currentIsPlayingAnimation = NO;
+    self.hidden = true;
 }
 
 - (void)startAnimating {
+    self.hidden = false;
     YYAnimatedImageType type = [self currentImageType];
     if (type == YYAnimatedImageTypeImages || type == YYAnimatedImageTypeHighlightedImages) {
         NSArray *images = [self imageForType:type];

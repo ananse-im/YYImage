@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1CF9FB1F397C5C00C9274B /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1CF9FA1F397C5C00C9274B /* WebP.framework */; };
 		D9D41AE91BD1033700CD8EBF /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D41ACF1BD1033700CD8EBF /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9D41AEA1BD1033700CD8EBF /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D41AD01BD1033700CD8EBF /* YYAnimatedImageView.m */; };
 		D9D41AEB1BD1033700CD8EBF /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D41AD11BD1033700CD8EBF /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1CF9FA1F397C5C00C9274B /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = ../Vendor/WebP.framework; sourceTree = "<group>"; };
 		D9D41AB61BD102F300CD8EBF /* YYImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D41AC11BD1030300CD8EBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D41ACF1BD1033700CD8EBF /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1CF9FB1F397C5C00C9274B /* WebP.framework in Frameworks */,
 				D9D41B031BD10CFA00CD8EBF /* libz.tbd in Frameworks */,
 				D9D41B091BD10D1E00CD8EBF /* AssetsLibrary.framework in Frameworks */,
 				D9D41B071BD10D0D00CD8EBF /* MobileCoreServices.framework in Frameworks */,
@@ -69,12 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1CF9F91F397C5C00C9274B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CF9FA1F397C5C00C9274B /* WebP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9D41AAC1BD102F300CD8EBF = {
 			isa = PBXGroup;
 			children = (
 				D9D41AC31BD1033700CD8EBF /* YYImage */,
 				D9D41AF91BD1033C00CD8EBF /* Supporting Files */,
 				D9D41AB71BD102F300CD8EBF /* Products */,
+				AB1CF9F91F397C5C00C9274B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,6 +325,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Vendor\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -331,6 +344,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Vendor\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

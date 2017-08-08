@@ -1830,7 +1830,7 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
     _width = canvasWidth;
     _height = canvasHeight;
     _frameCount = frames.count;
-    _loopCount = webpLoopCount;
+    _loopCount = 1;//webpLoopCount;
     _needBlend = needBlend;
     _webpSource = demuxer;
     dispatch_semaphore_wait(_framesLock, DISPATCH_TIME_FOREVER);
